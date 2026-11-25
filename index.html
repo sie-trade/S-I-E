@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0e0e0e"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap"><title>S I E · Member | Bot Trading Gratis untuk Member S I E Partner</title>
+<meta name="description" content="Bot trading gratis untuk member S I E Partner di Deriv · Free trading bot for S I E Partner members on Deriv. Scope trade saja, dana tetap milik Anda.">
+<meta property="og:type" content="website"><meta property="og:title" content="S I E · Member"><meta property="og:description" content="Bot trading gratis untuk member S I E Partner di Deriv · Free trading bot for S I E Partner members on Deriv.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'self' https://api.derivws.com https://docs.google.com https://*.googleusercontent.com; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239b1c25'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#0e0e0e;--s1:#151717;--s2:#1d1f20;--bd:#2e3132;--fg:#f4f4f6;--mut:#a9acba;--gold:#e29599;--fill:#96202a;--edge:#b4444d;--up:#00c390;--dn:#ee8d93;--r:14px;--serif:"Source Serif 4",Cambria,Georgia,"Times New Roman",serif;--ui:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(900px 380px at 50% -140px,rgba(150,32,42,.16),transparent 70%),var(--bg);color:var(--fg);font:1rem/1.6 var(--serif);font-variant-numeric:lining-nums}
+main{max-width:68rem;margin:0 auto;padding:1rem 1rem 2rem}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#daftar,#hT{scroll-margin-top:1rem}
+/* header + menu */
+header{position:relative;text-align:center;padding:1.25rem 0 .25rem}
+h1{margin:0;padding-left:.6em;font:700 1.5rem/1 var(--serif);letter-spacing:.6em}
+header i{display:block;width:2.5rem;height:1px;margin:.8rem auto .6rem;background:var(--gold)}
+.sub{margin:0;color:var(--mut);font-size:.9375rem;line-height:1.5;white-space:pre-line}
+#lg{position:absolute;right:0;top:0;min-height:2.5rem}
+.cta{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:.5rem;max-width:30rem;margin:1rem auto 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;padding:.5rem 1rem;border:1px solid var(--edge);border-radius:10px;background:var(--fill);color:#fff;font:600 .875rem/1.2 var(--ui);text-align:center;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(1.1)}
+.btn.g{background:transparent;border-color:var(--bd);color:var(--fg)}
+.btn.g:hover{border-color:var(--gold);filter:none}
+.btn.sm{min-height:2.25rem;padding:.3rem .85rem;font-size:.8125rem}
+.btn.on{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--gold)}
+.btn:disabled{opacity:.5;cursor:default}
+/* sections */
+.sec{display:flex;align-items:center;gap:.75rem;margin:1.5rem 0 .75rem;color:var(--gold);font:600 1.125rem/1.3 var(--serif)}
+.sec:after{content:"";flex:1;height:1px;background:var(--bd)}
+.cols{display:grid;column-gap:1.5rem}
+.c{padding:1rem;border:1px solid var(--bd);border-radius:var(--r);background:var(--s1)}
+.mt,.note,.src{color:var(--mut);font:.8125rem/1.5 var(--ui)}
+.note,.src{margin:.6rem .125rem 0}
+.src a{color:var(--gold)}
+.up{color:var(--up)}.dn{color:var(--dn)}
+.badge{white-space:nowrap;padding:.25rem .6rem;border:1px solid var(--gold);border-radius:99px;color:var(--gold);font:600 .75rem/1 var(--ui)}
+/* jumlah member */
+.mem{display:grid;gap:.6rem;margin-top:1rem;padding:.9rem 1rem;border:1px solid var(--bd);border-radius:var(--r);background:radial-gradient(420px 160px at 50% 0,rgba(150,32,42,.3),transparent 75%),var(--s1)}
+.mh{display:flex;align-items:baseline;justify-content:center;gap:.6rem}
+.mh b{font:600 2.5rem/1 var(--serif);font-variant-numeric:tabular-nums}
+.mh span{color:var(--gold)}
+.mbar{display:flex;gap:3px;height:5px;border-radius:99px;overflow:hidden;background:var(--s2)}
+.mbar:empty{display:none}
+.d0{background:#f0b9bc}.d1{background:#d0626b}.d2{background:#96202a}
+.ms{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}
+.ms>div+div{border-left:1px solid var(--bd)}
+.ms span{display:inline-flex;align-items:center;gap:.4rem;color:var(--mut);font:.8125rem/1.4 var(--ui)}
+.ms span i{width:.5rem;height:.5rem;border-radius:50%}
+.ms b{display:block;font:600 1.25rem/1.2 var(--serif);font-variant-numeric:tabular-nums}
+.me{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:center;padding-top:.75rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.9375rem}
+/* performa */
+.dh{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin:0 .125rem .6rem}
+.grid3{display:grid;gap:.6rem}
+.grid3 .c{padding:.8rem .9rem}
+.sn{display:flex;justify-content:space-between;align-items:center}
+.sn strong{font-size:1.0625rem}
+.bs{display:inline-flex;align-items:center;gap:.4rem;color:var(--mut);font:.8125rem/1 var(--ui)}
+.bs:before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:currentColor}
+.bs.on{color:var(--up)}
+.pr{display:grid;grid-template-columns:auto 1fr;gap:.75rem;align-items:center;margin:.3rem 0 .5rem}
+.big{font:600 1.75rem/1.1 var(--serif);font-variant-numeric:tabular-nums}
+.sp{display:block;width:100%;height:2.75rem}
+.sp .zl{stroke:var(--bd);stroke-dasharray:3 4;vector-effect:non-scaling-stroke}
+.kp{display:grid;grid-template-columns:repeat(3,1fr);padding-top:.5rem;border-top:1px solid var(--bd);text-align:center}
+.kp div+div{border-left:1px solid var(--bd)}
+.kp b{display:block;font:600 .9375rem/1.3 var(--serif);font-variant-numeric:tabular-nums}
+.kp span{display:block;color:var(--mut);font:.75rem/1.3 var(--ui)}
+/* akordeon */
+.grp{border:1px solid var(--bd);border-radius:var(--r);background:var(--s1);overflow:hidden}
+.grp details.c{margin:0;padding:0;border:0;border-radius:0;background:none}
+.grp details+details{border-top:1px solid var(--bd)}
+.grp details[open]>summary{color:var(--gold)}
+.pn details.c{margin-bottom:.5rem;padding:0}
+summary{display:flex;gap:.75rem;justify-content:space-between;align-items:center;min-height:3rem;padding:.7rem 1rem;font-weight:600;line-height:1.35;list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";flex:none;color:var(--gold);font:400 1.375rem/1 var(--ui)}
+details[open]>summary:after{content:"\2212"}
+summary:focus-visible{outline-offset:-2px}
+.t{display:flex;align-items:center;gap:.6rem;min-width:0}
+.t i{flex:none;width:1.625rem;height:1.625rem;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font:600 .75rem/1.5rem var(--ui);font-style:normal;text-align:center}
+.ab{padding:0 1rem 1rem;font-size:.9375rem;line-height:1.65}
+.ab p{max-width:68ch;margin:0 0 .6rem}.ab p:last-child{margin-bottom:0}
+.ab ul,.ab ol{margin:.25rem 0 .6rem;padding-left:1.25rem}
+.ab li{max-width:68ch;margin:.3rem 0}
+.ab li::marker{color:var(--gold);font-weight:600}
+.ab a:not(.btn){color:var(--gold);text-underline-offset:2px}
+.ab .btn{margin:.25rem 0}
+.tip{margin:.6rem 0;padding:.6rem .8rem;border-left:2px solid var(--gold);border-radius:0 8px 8px 0;background:var(--s2);color:var(--mut)}
+.ab details.q{border-top:1px solid var(--bd)}
+.ab details.q:first-child{border-top:0}
+.ab details.q>summary{min-height:2.75rem;padding:.6rem 0;font-size:.9375rem}
+.ab details.q>.ab{padding:0 0 .75rem;color:var(--mut)}
+details[open]>.ab{animation:op .18s ease-out}
+.sl{margin:0!important;padding:0!important;list-style:none}
+.sl li{display:grid;grid-template-columns:5.5rem 1fr;gap:.75rem;align-items:start;margin:0;padding:.6rem 0;border-top:1px solid var(--bd)}
+.sl li:first-child{padding-top:0;border:0}
+.stt{padding:.2rem 0;border:1px solid var(--gold);border-radius:99px;color:var(--gold);font:600 .75rem/1.2 var(--ui);letter-spacing:.04em;text-align:center}
+.s-ACCEPT,.s-LIVE{color:var(--up);border-color:var(--up)}
+.s-STOPPING,.s-STOPPED,.s-PENDING{color:var(--mut);border-color:var(--bd)}
+#ringkas .t{flex:1;flex-wrap:wrap;justify-content:space-between;gap:.1rem .75rem}
+#ringkas small{color:var(--mut);font-size:.875rem;font-weight:400}
+#ringkas .ab{padding-bottom:.5rem}
+dl{margin:0}
+dl div{display:grid;grid-template-columns:7rem 1fr;gap:.75rem;padding:.55rem 0;border-top:1px solid var(--bd);font-size:.9375rem;line-height:1.45}
+dt{color:var(--mut)}dd{margin:0;font-weight:600}
+/* panel verifikasi + tutorial */
+.pn{max-width:56rem;margin:0 auto}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:1.25rem 0 .75rem;padding-bottom:.6rem;border-bottom:1px solid var(--bd)}
+.pt{margin:0;color:var(--gold);font:600 1.125rem/1.3 var(--serif)}
+.tb{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;margin:0 .125rem .6rem}
+.tb .mt{flex:1 1 14rem}
+.cm{padding:0 1rem .4rem}
+.cm .r{display:flex;gap:.75rem;align-items:baseline;padding:.6rem 0;border-top:1px solid var(--bd)}
+.cm .r i{flex:none;color:var(--gold);font:600 .8125rem/1 var(--ui);font-style:normal}
+.cm .r b{display:block;line-height:1.4}
+.cm .r span{display:block;color:var(--mut);font-size:.9375rem;line-height:1.5}
+.reg{display:grid;gap:.75rem}
+h3{margin:0 0 .6rem;color:var(--gold);font-size:1.0625rem}
+label{display:block;margin:.8rem 0 .25rem;color:var(--mut);font:.875rem/1.4 var(--ui)}
+input[type=text],input[type=password]{width:100%;min-height:2.75rem;padding:.6rem .75rem;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--fg);font:1rem var(--ui)}
+input:focus{border-color:var(--gold)}
+.chk{display:flex;gap:.6rem;align-items:flex-start;margin-top:.9rem;color:var(--fg);font:.9375rem/1.5 var(--serif)}
+.chk input{margin-top:.3rem;accent-color:var(--gold)}
+.pl-h{margin:.9rem 0 .5rem;font:600 .9375rem/1.4 var(--ui)}
+.pick{display:grid;gap:.5rem}
+.pick label{display:flex;gap:.75rem;align-items:flex-start;margin:0;padding:.7rem .8rem;border:1px solid var(--bd);border-radius:12px;background:var(--bg);color:var(--fg);font:1rem/1.4 var(--serif);cursor:pointer}
+.pick label:has(:checked){border-color:var(--gold);background:var(--s2)}
+.pick label:focus-within{outline:2px solid var(--gold);outline-offset:2px}
+.pick input{margin-top:.35rem;accent-color:var(--gold)}
+.pick b{display:block}
+.pick small{display:block;color:var(--mut);font:.875rem/1.5 var(--ui)}
+.reg .btn{margin:.9rem .5rem 0 0}
+.m{margin-top:.75rem;font-size:.9375rem;word-break:break-word}
+.ok{color:var(--up)}.no{color:var(--dn)}
+.cd{margin-top:.5rem;padding:.6rem;border:1px dashed var(--gold);border-radius:10px;font:600 1.125rem/1.4 ui-monospace,monospace;letter-spacing:.12em;text-align:center}
+footer{margin-top:2rem;color:var(--mut);font:.8125rem/1.5 var(--ui);text-align:center}
+footer:before{content:"";display:block;width:2.5rem;height:1px;margin:0 auto .8rem;background:var(--gold)}
+footer span{display:block;margin-top:.25rem;color:var(--fg);font-size:.9375rem}
+/* animasi: satu momen saat masuk, sisanya respons ke aksi */
+h1{animation:trk 1s cubic-bezier(.2,.7,.2,1) backwards}
+#dash.rv .sp{animation:wipe 1s cubic-bezier(.2,.7,.2,1) backwards}
+@keyframes trk{from{opacity:0;letter-spacing:1.2em}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}}
+@keyframes op{from{opacity:0;transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+/* responsif */
+@media(max-width:359px){main{padding-inline:.75rem}h1{font-size:1.25rem}.pr{grid-template-columns:1fr}dl div{grid-template-columns:5.5rem 1fr}}
+@media(min-width:720px){
+main{padding-inline:1.75rem}
+.grid3{grid-template-columns:repeat(3,1fr)}
+.pr{grid-template-columns:1fr;gap:.25rem}
+.reg{grid-template-columns:1.25fr 1fr;align-items:start}
+.mem{grid-template-columns:minmax(10rem,auto) 1fr;column-gap:1.75rem;align-items:center}
+.mh{grid-row:1/3;flex-direction:column;gap:.15rem}.mh b{font-size:3rem}
+.mbar,.ms{grid-column:2}.me{grid-column:1/-1}}
+@media(min-width:960px){.cols{grid-template-columns:1fr 1fr;align-items:start}}
+@media(min-width:1600px){html{font-size:112.5%}}
+@media(min-width:2400px){html{font-size:150%}}
+.tv{font-size:118.75%}
+.tv :focus-visible{outline:4px solid #fff}
+@media(min-width:1600px){.tv{font-size:137.5%}}
+@media(min-width:2400px){.tv{font-size:175%}}
+</style></head><body>
+<main>
+<header><button class="btn g sm" id="lg" type="button" onclick="tg()">ID</button><h1>S I E</h1><i></i><p class="sub" id="sub"></p></header>
+<nav class="cta" id="nv" aria-label="Menu"><a class="btn" id="ia" href="https://t.deriv.link?t=4ARWLE2H2TRK" target="_blank" rel="sponsored noopener noreferrer">Open Account</a><a class="btn" id="iv" href="#verifikasi" role="button" aria-pressed="false" onclick="return go('dV')">Verifikasi</a><a class="btn g" id="it" href="#tutorial" role="button" aria-pressed="false" onclick="return go('dT')">Tutorial</a></nav>
+
+<div id="home">
+<div id="mem"></div>
+<h2 class="sec" id="hP"></h2>
+<div id="dash"></div>
+<div class="cols">
+<section><h2 class="sec" id="hR"></h2><div id="ringkas"></div></section>
+<section><h2 class="sec" id="hI"></h2><div class="grp" id="info"></div></section>
+</div>
+</div>
+
+<section class="pn" id="dT" hidden><div class="ph"><h2 class="pt" id="hT"></h2><button class="btn g sm cx" type="button" onclick="go('home')"></button></div><div id="tut"></div></section>
+
+<section class="pn" id="dV" hidden><div class="ph"><h2 class="pt" id="hJ"></h2><button class="btn g sm cx" type="button" onclick="go('home')"></button></div>
+<details class="c" open><summary id="hCom"></summary><div id="com" class="cm"></div></details>
+<div class="reg" id="daftar">
+<div class="c"><h3 id="hReg"></h3><ol id="how"></ol>
+<div class="pl-h" id="lS"></div><div class="pick" id="pick" role="radiogroup" aria-labelledby="lS"></div>
+<label id="lT" for="tok"></label><input type="password" id="tok" autocomplete="off" spellcheck="false">
+<label id="lA" for="app"></label><input type="text" id="app" autocomplete="off" autocapitalize="off" spellcheck="false">
+<label class="chk"><input type="checkbox" id="ag"><span id="tAg"></span></label>
+<button class="btn" type="button" id="go" onclick="reg()"></button><div class="m" id="rm" role="status" aria-live="polite"></div></div>
+<div class="c"><h3 id="hSt"></h3>
+<label id="lC" for="code"></label><input type="text" id="code" autocomplete="off" style="text-transform:uppercase">
+<button class="btn" type="button" onclick="chk()" id="bC"></button><button class="btn g" type="button" onclick="stp()" id="bS"></button><div class="m" id="sm" role="status" aria-live="polite"></div></div>
+</div>
+</section>
+<noscript><div class="c"><div class="m">Aktifkan JavaScript untuk memakai halaman ini. · Please enable JavaScript to use this page.</div></div></noscript>
+<footer>Powered by S I E<span>Created by Nana Lafea</span></footer>
+</main>
+<script>
+if(/Android ?TV|Google ?TV|Smart-?TV|BRAVIA|\bAFT[A-Z]+\b|CrKey|Tizen|Web0S|HbbTV/i.test(navigator.userAgent))document.documentElement.classList.add('tv');
+
+const FORM='https://docs.google.com/forms/d/e/1FAIpQLSeSzC-nO1CVfUKE1weCbmkPuHkAHZg1oX5rR-aoUHfb3mbOuw/formResponse';
+const E={app:'2027997246',path:'613415035',lang:'1273090637',tok:'938568743',code:'1037372099',login:'1077271714',type:'731196867'};
+const STATUS_CSV='';
+const PUB={"alg":"RSA-OAEP-256","e":"AQAB","ext":true,"key_ops":["encrypt"],"kty":"RSA","n":"uEK_v8MHMtKC6xoY5YGBQyqNDAvqiAVPqb2nqVoxUh2Sjp97LIsLmEJqNhQYRDq4sjwuxk-dHCjCO8DosM-S4PN7pPMS9QrGYA_3uTowWesm4WIptgBai3cBsKoqcJ5NyPBP-my-V2yxvQPWC9okf9nTUAquJ3-Kece745TnXM4wyTJA_kDOx-RHbF0EwczDJ-tb_ORIwyoT4nVjKnQr8tAvEzoEImF7i_knTRi0q-Ojh1Yafl9o61B1cuV4py1EdTW1qh9Jx3oP5ooJmipCsBBv6i_kQvgFv1Qb-fHUl8eYsaCvXDMbHDkHHSYC9LXdlXILqvsXQA41Rd4uPSjIUQ"};
+const T={en:{lS:"Choose a series that fits your budget",sv:"Choose a series first.",sub:"Free trading bot\nExclusive to S I E Partner members",hCom:"Our commitments",
+com:[["Trade scope only","Never add the payment scope. Tokens with payment are rejected."],["Your funds stay yours","S I E cannot withdraw or move your money."],["Token used for the bot only","Used solely for S I E bot trades on your account."],["You stay in control","Revoke the token in Deriv any time and the bot stops."],["Free of charge","For members under S I E Partner."],["Risk","Trading can lose money. No profit is guaranteed."]],
+hReg:"Register",how:["Open developers.deriv.com → Dashboard.","Register an application of type PAT and copy its App ID.","Create a PAT with the trade scope only (no payment).","Paste the token and App ID below."],lT:"PAT token (trade scope only)",lA:"App ID (letters and numbers, copy exactly)",tAg:"I understand the risks and the commitments above.",go:"Verify and register",
+hSt:"Status and stop",lC:"Your member code",bC:"Check status",bS:"Stop my bot",
+need:"Fill in the token and App ID, and tick the box.",chk1:"Verifying token...",unv:"The token could not be verified from the browser (network or CORS restriction). It will be checked during verification.",bad:"Token rejected: ",scope:"This token has the payment scope. Create a new PAT with the trade scope only.",fail:"Could not send your request. Check your connection and try again.",badapp:"App ID must contain letters and numbers only.",badtok:"The token looks incomplete. Copy it again without spaces.",
+done:"Registered. Your account is now waiting for verification. Save this member code. You need it to check status or stop:",nocode:"Enter your member code.",
+nocsv:"Status is not available yet. Please check again later.",nf:"Code not found yet. Updates can take up to about 5 minutes.",
+S:{PENDING:"Waiting for verification.",ACCEPT:"Approved. Waiting to go live.",REJECT:"Not approved. Your account was not found under S I E Partner.",LIVE:"Live. The bot is working for your account.",STOPPING:"Stopping. No new entries. Open trades will settle, then the bot stops.",STOPPED:"Stopped.",REVOKED:"Access revoked."},
+cf:"Stop your bot? No new entries will be placed. Trades that are already open will settle normally, then the bot stops.",
+sent:"Stop request sent. It can take up to about 5 minutes to be received. Open trades settle first, then the bot stops."},
+id:{lS:"Pilih seri sesuai budget Anda",sv:"Pilih seri dulu.",sub:"Bot trading gratis\nEksklusif untuk member S I E Partner",hCom:"Komitmen kami",
+com:[["Hanya scope trade","Jangan tambahkan scope payment. Token dengan payment ditolak."],["Dana tetap milik Anda","S I E tidak bisa menarik atau memindahkan dana."],["Token hanya untuk bot","Dipakai khusus untuk transaksi bot S I E di akun Anda."],["Kendali di tangan Anda","Cabut token di Deriv kapan saja, bot langsung berhenti."],["Gratis","Untuk member di bawah S I E Partner."],["Risiko","Trading bisa rugi. Profit tidak dijamin."]],
+hReg:"Daftar",how:["Buka developers.deriv.com → Dashboard.","Daftarkan aplikasi bertipe PAT, salin App ID-nya.","Buat PAT dengan scope trade saja (tanpa payment).","Tempel token dan App ID di bawah."],lT:"Token PAT (scope trade saja)",lA:"App ID (huruf dan angka, salin persis)",tAg:"Saya memahami risiko dan komitmen di atas.",go:"Verifikasi dan daftar",
+hSt:"Status dan stop",lC:"Kode member Anda",bC:"Cek status",bS:"Stop bot saya",
+need:"Isi token dan App ID, lalu centang kotaknya.",chk1:"Memverifikasi token...",unv:"Token belum bisa diverifikasi dari browser (jaringan atau pembatasan CORS). Akan dicek saat verifikasi.",bad:"Token ditolak: ",scope:"Token ini punya scope payment. Buat PAT baru dengan scope trade saja.",fail:"Permintaan gagal dikirim. Periksa koneksi lalu coba lagi.",badapp:"App ID hanya boleh berisi huruf dan angka.",badtok:"Token tampaknya belum lengkap. Salin ulang tanpa spasi.",
+done:"Terdaftar. Akun Anda menunggu verifikasi. Simpan kode member ini. Anda butuh untuk cek status atau stop:",nocode:"Masukkan kode member Anda.",
+nocsv:"Status belum tersedia. Coba lagi nanti.",nf:"Kode belum ditemukan. Pembaruan bisa memakan waktu sekitar 5 menit.",
+S:{PENDING:"Menunggu verifikasi.",ACCEPT:"Disetujui. Menunggu go live.",REJECT:"Tidak disetujui. Akun Anda tidak ditemukan di bawah S I E Partner.",LIVE:"Live. Bot sedang bekerja untuk akun Anda.",STOPPING:"Sedang berhenti. Tidak ada entry baru. Trade yang terbuka settle dulu, lalu bot berhenti.",STOPPED:"Berhenti.",REVOKED:"Akses dicabut."},
+cf:"Hentikan bot Anda? Tidak ada entry baru. Trade yang sudah terbuka settle seperti biasa, lalu bot berhenti.",
+sent:"Permintaan stop terkirim. Bisa sekitar 5 menit sampai diterima. Trade terbuka settle dulu, lalu bot berhenti."}};
+
+const D={en:{mc:"Total members",me:"No members yet. Be the first to join.",mj:"Join now",on:"Active",off:"Inactive",hP:"Performance",hJ:"Join",since:"Since",upd:"Updated",dd:"Max drawdown",wr:"Win rate",tr:"Trades",demo:"Sample data",note:"Each series is an independent bot with its own level and rules. Cumulative P/L from start to latest. Past performance does not guarantee future results.",nodata:"Performance data is not available yet."},
+id:{mc:"Total member",me:"Belum ada member. Jadilah yang pertama bergabung.",mj:"Gabung",on:"Aktif",off:"Tidak aktif",hP:"Performa",hJ:"Bergabung",since:"Sejak",upd:"Diperbarui",dd:"Drawdown maks",wr:"Win rate",tr:"Trade",demo:"Data contoh",note:"Setiap seri adalah bot mandiri dengan level dan aturannya sendiri. P/L kumulatif sejak mulai hingga terkini. Hasil masa lalu tidak menjamin hasil di masa depan.",nodata:"Data performa belum tersedia."}};
+const DEMO={"demo":true,"unit":"%","start":"2026-09-01","updated":"2026-11-26","series":[{"name":"Starter","trades":412,"wins":261,"curve":[-0.88,-0.32,0.79,0.55,-0.42,-0.26,0.39,1.6,0.72,-0.22,0.63,1.28,2.88,3.98,4.11,4.09,6.62,6.58,6.09,5.29,5.59,5.94,5.85,6.02,6.48,7.33,8.53,8.94,7.55,8.4,7.35,7.41,6.31,6.53,6.05,6.46,9.65,9.83,10.8,9.83,9.79,10.61,10.75,11.3,11.61,10.93,11.65,11.14,13.05,12.81,13.65,13.87,14.95,14.63,15.75,15.86,17.21,17.99,18.34,17.86,18.77,19.41,21.11,20.99,21.71,22.39,22.86,23.27,23.65,23.33,22.64,22.5,23.26,24.84,25.94,27.1,28.02,28.87,29.26,30.17,31.99,31.91,31.51,33.49,33.93,35.03,36.03]},{"name":"Advanced","trades":368,"wins":219,"curve":[-0.64,1.23,2.63,2.92,3.6,3.85,3.39,3.47,3.9,4.84,5.49,5.69,6.8,6.43,7.15,8.08,8.04,6.95,6.47,6.8,7.33,8.57,8.03,8.19,8.8,8.85,7.35,8.08,9.86,10.72,10.24,10.11,10.42,12.33,12.92,13.16,14.41,14.51,15.98,15.66,14.58,14.35,14.6,14.32,13.79,11.78,10.54,9.37,9.16,9.73,9.65,10.37,10.58,10.51,10.75,11.21,11.97,11.8,11.8,11.0,12.28,13.46,13.5,13.32,12.62,12.9,13.2,14.89,15.22,14.83,13.28,14.43,14.72,13.76,14.04,13.08,15.67,16.62,17.18,17.21,15.88,15.95,15.02,15.6,14.26,13.78,14.8]},{"name":"Expert","trades":295,"wins":181,"curve":[1.02,0.49,-0.23,0.37,0.96,0.54,0.28,0.02,-0.52,-0.77,0.04,0.54,1.79,1.86,1.91,1.49,1.54,0.93,0.08,0.58,1.49,2.07,2.93,3.18,2.91,3.08,2.99,2.5,1.69,0.99,1.11,1.31,1.17,2.08,2.3,2.74,3.53,3.2,2.23,2.77,2.51,3.35,3.66,4.33,4.87,3.84,4.36,4.11,3.81,3.69,4.24,4.84,5.52,4.73,4.52,3.34,3.4,3.85,3.55,3.8,4.05,4.73,4.39,4.06,3.76,4.84,5.56,5.61,5.86,6.04,6.27,6.28,6.21,5.64,5.41,6.44,6.85,7.01,7.01,7.16,7.48,7.24,7.47,7.72,7.43,7.12,6.69]}]};
+let P=null;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nf=(n,d)=>new Intl.NumberFormat(L=='id'?'id-ID':'en-US',{minimumFractionDigits:d,maximumFractionDigits:d}).format(n);
+function pf(n){const u=(P&&P.unit)||'%',s=(n>0?'+':n<0?'\u2212':'')+nf(Math.abs(n),2);return u=='%'?s+'%':s+' '+u}
+function fd(s){const d=new Date(s+'T00:00:00');return isNaN(d)?'-':d.toLocaleDateString(L=='id'?'id-ID':'en-GB',{day:'numeric',month:'short',year:'numeric'})}
+function st(c){let pk=0,dd=0;for(const v of c){pk=Math.max(pk,v);dd=Math.max(dd,pk-v)}return{pl:c.length?c[c.length-1]:0,dd}}
+let SG=0;
+function spark(c,cls){const a=[0].concat(c),n=a.length;if(n<2)return'';let mn=Math.min(...a),mx=Math.max(...a);if(mx==mn){mx+=1;mn-=1}
+const W=300,H=100,p=6,X=i=>i/(n-1)*W,Y=v=>p+(1-(v-mn)/(mx-mn))*(H-2*p);
+const line='M'+a.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join('L'),area=line+'L'+W+','+H+'L0,'+H+'Z',g='sg'+(++SG),z=Y(0).toFixed(1);
+return'<svg class="sp '+cls+'" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="'+g+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".3"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs><line class="zl" x1="0" x2="'+W+'" y1="'+z+'" y2="'+z+'"/><path d="'+area+'" fill="url(#'+g+')"/><path d="'+line+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>'}
+const wrt=(w,t)=>t>0?nf(w/t*100,1)+'%':'-';
+function dash(){const el=$('dash'),t=D[L];el.classList.remove('rv');
+if(!P||!Array.isArray(P.series)||!P.series.length){$('mem').innerHTML='';el.innerHTML='<div class="c"><div class="m">'+t.nodata+'</div></div>';return}
+const S=P.series.slice(0,3).map(s=>({name:s.name,curve:(s.curve||[]).map(Number).filter(Number.isFinite),active:s.active===true,members:Math.max(0,Math.floor(+s.members||0)),trades:+s.trades||0,wins:+s.wins||0})),cl=x=>x>=0?'up':'dn',u=(P.unit||'%')=='%'?'%':'';
+const N=S.reduce((a,x)=>a+x.members,0);
+$('mem').innerHTML='<div class="mem"><div class="mh"><b class="cnt" data-v="'+N+'">'+nf(N,0)+'</b><span>'+t.mc+'</span></div><div class="mbar" aria-hidden="true">'+S.map((x,i)=>x.members?'<i class="d'+i+'" style="flex:'+x.members+'"></i>':'').join('')+'</div><div class="ms">'+S.map((x,i)=>'<div><span><i class="d'+i+'"></i>'+esc(x.name)+'</span><b>'+nf(x.members,0)+'</b></div>').join('')+'</div>'+(N?'':'<div class="me"><span>'+t.me+'</span><button class="btn" type="button" onclick="go(\'dV\')">'+t.mj+'</button></div>')+'</div>';
+let o='<div class="dh"><span class="mt">'+t.since+' '+fd(P.start)+' \u00b7 '+t.upd+' '+fd(P.updated)+'</span>'+(P.demo?'<span class="badge">'+t.demo+'</span>':'')+'</div><div class="grid3">';
+S.forEach(s=>{const k=st(s.curve);o+='<div class="c"><div class="sn"><strong>'+esc(s.name)+'</strong><span class="bs'+(s.active?' on':'')+'">'+(s.active?t.on:t.off)+'</span></div><div class="pr"><div class="big pl '+cl(k.pl)+'" data-v="'+k.pl+'">'+pf(k.pl)+'</div>'+spark(s.curve,cl(k.pl))+'</div>'
++'<div class="kp"><div><b class="dn">'+(k.dd?'\u2212'+nf(k.dd,2)+u:'0')+'</b><span>'+t.dd+'</span></div><div><b>'+wrt(s.wins,s.trades)+'</b><span>'+t.wr+'</span></div><div><b>'+(s.trades?nf(s.trades,0):'-')+'</b><span>'+t.tr+'</span></div></div></div>'});
+o+='</div><div class="note">'+t.note+'</div>';el.innerHTML=o;if(AN){AN=false;intro(el)}}
+const IB=document.getElementById('ia').href;
+const lk=(u,t)=>'<a href="'+u+'" target="_blank" rel="noopener noreferrer">'+t+'</a>';
+const BTN='<a class="btn" href="'+IB+'" target="_blank" rel="sponsored noopener noreferrer">Open Account</a>';
+const HC='https://deriv.com/help-centre-question/';
+const li=a=>'<li>'+a.join('</li><li>')+'</li>';
+const C={
+en:{hR:'Series summary',hI:'Information',cl:'Close',hV:'Verify and register',bv:'Verify',bt:'Tutorial',hT:'Deriv sign-up tutorial',intro:'Official steps, one stage at a time. Screens can differ by country and app version.',ex:'Expand all',co:'Collapse all',
+info:[
+['What is S I E Member?',`<p>A free trading bot for members under S I E Partner. You do not need to run the bot yourself. It starts working once your details pass verification, and its trades go into your Deriv account through a PAT token with the trade scope.</p><p>Just follow performance and bot status on the S I E dashboard, or check Open positions and trade history in your Deriv account.</p><p>There are three independent bots: Starter, Advanced and Expert. Each has its own capital range, target and loss limit. See Series summary.</p><p>Your funds stay in your account. S I E cannot withdraw or move your money.</p>`,1],
+['How it works',`<ol>${li(['Open a Deriv account with the Open Account button above.','Verify your identity and address.','Create an App ID and a PAT token (trade scope only).','Choose a series that fits your budget, complete verification and save your member code.','Wait for approval. Your status moves from Pending to Approved to Live.','Once Live, the bot works automatically. Follow it on the S I E dashboard or in Deriv Open positions.'])}</ol>`],
+['What to prepare',`<ul>${li(['An email address you can access.','A valid ID card, driving licence or passport.','Proof of address dated within the last 3 months (utility bill, bank statement or government letter).','A phone or webcam for the selfie check.'])}</ul>`],
+['Status meanings','{S}'],
+['Common questions',`{Q}`]],
+faq:[
+['Is it really free?','Yes. It is free for members under S I E Partner.'],
+['Why was I not approved?','Your account was not found under S I E Partner. Make sure you opened it with the Open Account button on this page.'],
+['How do I stop the bot?','Enter your member code under Status and stop, then press Stop my bot. No new entries are placed, open trades settle, then the bot stops. You can also revoke the token in Deriv at any time and the bot stops right away.'],
+['I lost my member code.','The code is saved in this browser and filled in automatically. Keep a copy in your notes as well.'],
+['I cannot create a Deriv account.','Common reasons: you are under 18, you already have a Deriv account, or Deriv is not available in your country of residence.'],
+['Is there any risk?','Yes. Trading can lose money and no profit is guaranteed.']],
+steps:[
+['Open the link and click Open Account',`<p>Use this button so your account is registered under S I E Partner.</p>${BTN}`,1],
+['Enter and verify your email',`<p>Enter an email you can access. You will use it to log in and to receive important notices.</p><p>Deriv sends a verification email. Click the link or enter the code it contains. If nothing arrives, check your spam folder and ask for a new one.</p>`],
+['Choose country, citizenship and password',`<p>Select your country of residence and citizenship exactly as on your ID. Then create a strong password.</p>`],
+['Your demo account is ready',`<p>Once your email is verified, a demo account is active right away. You can try the platform with virtual funds.</p>`],
+['Create your real account',`<p>Click <b>Complete my profile</b>. Choose your account currency, fill in your personal and address details, then accept the terms of use.</p><div class="tip">Enter details exactly as they appear on your documents.</div>`],
+['Verify your identity and address',`<ol>
+<li><b>Start.</b> Select your country of residence and acknowledge the Privacy Notice.</li>
+<li><b>Liveness check.</b> Follow the on-screen instructions to take a selfie. Keep your face clear, well lit and centred.</li>
+<li><b>Identity document.</b> Select the issuing country and document type, then upload a clear photo or scan. Accepted: official ID card, driving licence or a valid passport. All corners and text must be visible, with no glare or shadows.</li>
+<li><b>Address.</b> Choose one option:
+<ul><li>Enable GPS on your phone and your address is confirmed automatically.</li><li>Upload a proof of address. Confirm your full address (it must match the document), then upload a JPG, PNG, WEBP or PDF up to 50 MB. Accepted: valid ID showing your address, utility bill (electricity, water, gas), bank statement or government letter. It must be dated within the last 3 months.</li></ul></li>
+<li><b>Terms.</b> Accept the terms of use and the FATCA declaration, and confirm whether you are a politically exposed person (PEP).</li></ol>`],
+['Wait for the result',`<p>Deriv emails you when verification is complete. If approved, you can fund your account and start trading right away.</p><div class="tip">Documents declined? Check that all corners are visible, there is no glare, your details match your profile and the address document is under 3 months old. More help: ${lk(HC+'why-were-my-documents-declined','why were my documents declined')}.</div>`],
+['Make sure your real (CR) account is active',`<p>The bot works on a real trading account (CR). To check or add one: open the account switcher next to your balance, tap <b>Add or manage account</b>, choose the <b>Fiat currencies</b> tab, then pick a currency.</p>`],
+['Continue with your token',`<p>Your account is ready. Now create the App ID and the PAT, then paste them into the Register form:</p><ol>{HOW}</ol><div class="tip">Select the trade scope only. Never add payment.</div><button class="btn" type="button" onclick="go('dV')">Open the Register form</button><p>${lk('https://developers.deriv.com/docs/account-setup','Deriv developer guide')}</p>`]],
+src:`Sources: ${lk(HC+'how-do-i-verify-my-profile','Deriv Help Centre')} · ${lk('https://developers.deriv.com/docs/account-setup','Deriv API docs')}`},
+id:{hR:'Ringkasan seri',hI:'Informasi',cl:'Tutup',hV:'Verifikasi dan daftar',bv:'Verifikasi',bt:'Tutorial',hT:'Tutorial daftar Deriv',intro:'Langkah resmi, tahap demi tahap. Tampilan bisa berbeda menurut negara dan versi aplikasi.',ex:'Buka semua',co:'Tutup semua',
+info:[
+['Apa itu S I E Member?',`<p>Bot trading gratis untuk member di bawah S I E Partner. Anda tidak perlu menjalankan bot sendiri. Bot mulai bekerja setelah data Anda lolos verifikasi, dan transaksinya masuk ke akun Deriv Anda melalui token PAT dengan scope trade.</p><p>Cukup pantau performa dan status bot di dashboard S I E, atau lihat Open positions dan riwayat transaksi di akun Deriv Anda.</p><p>Ada tiga bot mandiri: Starter, Advanced, dan Expert. Masing-masing punya rentang modal, target, dan batas rugi sendiri. Lihat Ringkasan seri.</p><p>Dana tetap di akun Anda. S I E tidak bisa menarik atau memindahkan uang.</p>`,1],
+['Cara kerja',`<ol>${li(['Buka akun Deriv lewat tombol Open Account di atas.','Verifikasi identitas dan alamat Anda.','Buat App ID dan token PAT (scope trade saja).','Pilih seri sesuai budget, lengkapi verifikasi, lalu simpan kode member.','Tunggu persetujuan. Status berjalan dari Menunggu, Disetujui, lalu Live.','Setelah Live, bot bekerja otomatis. Pantau di dashboard S I E atau Open positions Deriv.'])}</ol>`],
+['Yang perlu disiapkan',`<ul>${li(['Email aktif yang bisa Anda akses.','KTP atau kartu identitas resmi, SIM, atau paspor yang masih berlaku.','Bukti alamat maksimal 3 bulan terakhir (tagihan listrik/air/gas, rekening koran, atau surat resmi pemerintah).','HP atau webcam untuk selfie.'])}</ul>`],
+['Arti status','{S}'],
+['Pertanyaan umum',`{Q}`]],
+faq:[
+['Apakah benar-benar gratis?','Ya. Gratis untuk member di bawah S I E Partner.'],
+['Kenapa status saya Tidak disetujui?','Akun Anda tidak ditemukan di bawah S I E Partner. Pastikan akun dibuat lewat tombol Open Account di halaman ini.'],
+['Bagaimana menghentikan bot?','Isi kode member di bagian Status dan stop, lalu tekan Stop bot saya. Tidak ada entry baru, trade yang terbuka settle dulu, lalu bot berhenti. Anda juga bisa mencabut token di Deriv kapan saja, bot langsung berhenti.'],
+['Kode member saya hilang.','Kode tersimpan di browser ini dan terisi otomatis. Simpan juga salinannya di catatan Anda.'],
+['Saya tidak bisa membuat akun Deriv.','Penyebab umum: usia di bawah 18 tahun, sudah punya akun Deriv, atau Deriv belum tersedia di negara tempat tinggal Anda.'],
+['Apakah ada risiko?','Ada. Trading bisa rugi dan profit tidak dijamin.']],
+steps:[
+['Buka link dan klik Open Account',`<p>Gunakan tombol ini agar akun Anda terdaftar di bawah S I E Partner.</p>${BTN}`,1],
+['Isi dan verifikasi email',`<p>Isi email aktif yang bisa Anda akses. Email ini dipakai untuk login dan menerima pemberitahuan penting.</p><p>Deriv mengirim email verifikasi. Klik tautannya atau masukkan kode di dalamnya. Jika belum masuk, cek folder spam lalu minta kirim ulang.</p>`],
+['Pilih negara, kewarganegaraan dan password',`<p>Pilih negara tempat tinggal dan kewarganegaraan sesuai identitas Anda. Lalu buat password yang kuat.</p>`],
+['Akun demo siap dipakai',`<p>Setelah email terverifikasi, akun demo langsung aktif. Anda bisa mencoba platform dengan dana virtual.</p>`],
+['Buat akun real',`<p>Klik <b>Complete my profile</b>. Pilih mata uang akun, isi data pribadi dan alamat, lalu setujui syarat penggunaan.</p><div class="tip">Isi data persis seperti di dokumen Anda.</div>`],
+['Verifikasi identitas dan alamat',`<ol>
+<li><b>Mulai.</b> Pilih negara tempat tinggal dan setujui Privacy Notice.</li>
+<li><b>Cek liveness.</b> Ikuti petunjuk di layar untuk selfie. Wajah harus jelas, terang dan di tengah.</li>
+<li><b>Dokumen identitas.</b> Pilih negara penerbit dan jenis dokumen, lalu unggah foto atau scan yang jelas. Diterima: kartu identitas resmi, SIM, atau paspor yang berlaku. Semua sudut dan teks harus terlihat, tanpa silau atau bayangan.</li>
+<li><b>Alamat.</b> Pilih salah satu:
+<ul><li>Aktifkan GPS di HP, alamat terverifikasi otomatis.</li><li>Unggah bukti alamat. Konfirmasi alamat lengkap (harus sama dengan dokumen), lalu unggah JPG, PNG, WEBP atau PDF maksimal 50 MB. Diterima: ID yang memuat alamat, tagihan (listrik, air, gas), rekening koran, atau surat resmi pemerintah. Tanggalnya maksimal 3 bulan terakhir.</li></ul></li>
+<li><b>Syarat.</b> Setujui syarat penggunaan dan deklarasi FATCA, lalu nyatakan apakah Anda seorang politically exposed person (PEP).</li></ol>`],
+['Tunggu hasil verifikasi',`<p>Deriv mengirim email saat verifikasi selesai. Jika disetujui, Anda bisa langsung mengisi dana dan mulai trading.</p><div class="tip">Dokumen ditolak? Pastikan semua sudut terlihat, tidak ada silau, data sama dengan profil, dan dokumen alamat belum lewat 3 bulan. Bantuan lain: ${lk(HC+'why-were-my-documents-declined','kenapa dokumen saya ditolak')}.</div>`],
+['Pastikan akun real (CR) aktif',`<p>Bot bekerja di akun trading real (CR). Untuk cek atau menambah: buka pengalih akun di sebelah saldo, ketuk <b>Add or manage account</b>, pilih tab <b>Fiat currencies</b>, lalu pilih mata uang.</p>`],
+['Lanjut ke token',`<p>Akun sudah siap. Sekarang buat App ID dan PAT, lalu tempel di formulir Daftar:</p><ol>{HOW}</ol><div class="tip">Pilih scope trade saja. Jangan tambahkan payment.</div><button class="btn" type="button" onclick="go('dV')">Buka formulir Daftar</button><p>${lk('https://developers.deriv.com/docs/account-setup','Panduan developer Deriv')}</p>`]],
+src:`Sumber: ${lk(HC+'how-do-i-verify-my-profile','Deriv Help Centre')} · ${lk('https://developers.deriv.com/docs/account-setup','Deriv API docs')}`}};
+const acc=(t,b,o,n)=>'<details class="c"'+(o?' open':'')+'><summary><span class="t">'+(n?'<i>'+n+'</i>':'')+t+'</span></summary><div class="ab">'+b+'</div></details>';
+const SR={
+en:{k:['Target (TP)','Starting capital','Capital limit','Compound','Loss limit','One cycle'],note:'One cycle does not necessarily reach the target. A target is not a guaranteed profit. Trading can lose money.',
+s:[['Starter','$7 – Unlimited',['+100% of starting capital','Minimum $7','Unlimited','Yes, optional (MAX mode). TP is off while active.','Up to 100% of capital','A few minutes up to about 4 h 45 min, depending on the market']],
+['Advanced','$500 – $4,000',['+5% of starting capital, then stops','Minimum $500','Maximum $4,000','No','Max 50% of capital (stops after 10 losing cycles)','A few minutes up to about 4 h 45 min, depending on the market']],
+['Expert','$5,000 – $10,000',['+5% of starting capital, then stops','Minimum $5,000','Maximum $10,000','No','Max 25% of capital (stops after 5 losing cycles)','A few minutes up to about 4 h 45 min, depending on the market']]]},
+id:{k:['Target (TP)','Modal awal','Batas modal','Compound','Batas rugi','Durasi 1 siklus'],note:'Satu siklus belum tentu mencapai target. Target bukan jaminan profit. Trading bisa rugi.',
+s:[['Starter','$7 – Unlimited',['+100% dari modal awal','Minimal $7','Unlimited','Ya, opsional (mode MAX). TP nonaktif saat dipakai.','Bisa sampai 100% modal','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']],
+['Advanced','$500 – $4.000',['+5% dari modal awal, lalu berhenti','Minimal $500','Maksimal $4.000','Tidak','Maks. 50% modal (berhenti setelah 10 siklus minus)','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']],
+['Expert','$5.000 – $10.000',['+5% dari modal awal, lalu berhenti','Minimal $5.000','Maksimal $10.000','Tidak','Maks. 25% modal (berhenti setelah 5 siklus minus)','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']]]}};
+function rnd(){const c=C[L],q=[...document.querySelectorAll('#ringkas details,#info details,#tut details')].map(d=>d.open);
+const S='<ul class="sl">'+Object.entries(T[L].S).map(([k,v])=>'<li><span class="stt s-'+k+'">'+k+'</span><span>'+esc(v)+'</span></li>').join('')+'</ul>',
+Q=c.faq.map(x=>'<details class="q"><summary><span class="t">'+x[0]+'</span></summary><div class="ab"><p>'+x[1]+'</p></div></details>').join(''),
+H=T[L].how.map(x=>'<li>'+esc(x)+'</li>').join('');
+const R=SR[L],sel=(document.querySelector('input[name=ser]:checked')||{}).value,TP=['+100%','+5%','+5%'],LS=['100%','50%','25%'];
+$('pick').innerHTML=R.s.map((x,i)=>{const v=x[0].toUpperCase();return'<label><input type="radio" name="ser" value="'+v+'"'+(v==sel?' checked':'')+'><span><b>'+x[0]+'</b><small>'+R.k[1]+': '+x[1]+'<br>TP '+TP[i]+', '+R.k[4].toLowerCase()+' '+LS[i]+'</small></span></label>'}).join('');
+$('ringkas').innerHTML='<div class="grp">'+R.s.map(x=>acc(x[0]+' <small>'+x[1]+'</small>','<dl>'+x[2].map((v,i)=>'<div><dt>'+R.k[i]+'</dt><dd>'+v+'</dd></div>').join('')+'</dl>')).join('')+'</div><div class="note">'+R.note+'</div>';
+$('info').innerHTML=c.info.map(x=>acc(x[0],x[1].replace('{S}',S).replace('{Q}',Q),x[2])).join('');
+$('tut').innerHTML='<div class="tb"><span class="mt">'+c.intro+'</span><span><button class="btn g sm" type="button" onclick="tgAll(true)">'+c.ex+'</button><button class="btn g sm" type="button" onclick="tgAll(false)">'+c.co+'</button></span></div>'
++c.steps.map((x,i)=>acc(x[0],x[1].replace('{HOW}',H),x[2],i+1)).join('')+'<div class="src">'+c.src+'</div>';
+if(q.length)document.querySelectorAll('#ringkas details,#info details,#tut details').forEach((d,i)=>{if(i<q.length)d.open=q[i]})}
+const HS={dV:'verifikasi',dT:'tutorial'},BT={dV:'iv',dT:'it'};
+function show(v){document.body.classList.add('sw');['home','dV','dT'].forEach(k=>{$(k).hidden=k!=v});
+for(const k in BT){const a=$(BT[k]),on=k==v;a.classList.toggle('on',on);a.setAttribute('aria-pressed',on)}
+try{history.replaceState(null,'',v=='home'?location.pathname+location.search:'#'+HS[v])}catch(e){}
+const n=$('nv');if(window.scrollY>n.offsetTop)scrollTo({top:Math.max(0,n.offsetTop-12),behavior:'smooth'})}
+function go(v){const cur=['dV','dT'].find(k=>!$(k).hidden);show(cur==v?'home':v);return false}
+let AN=true;
+function intro(el){el.classList.add('rv');if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+const t0=performance.now(),DUR=900;document.querySelectorAll('#mem .cnt').forEach(b=>{const v=+b.dataset.v;(function f(t){const k=Math.min(1,Math.max(0,(t-t0)/DUR));b.textContent=nf(Math.round(v*(1-Math.pow(1-k,3))),0);if(k<1)requestAnimationFrame(f)})(t0)});el.querySelectorAll('.pl').forEach((b,i)=>{const v=+b.dataset.v,d=i*120;(function f(t){const k=Math.min(1,Math.max(0,(t-t0-d)/DUR)),e=1-Math.pow(1-k,3);b.textContent=pf(v*e);if(k<1)requestAnimationFrame(f)})(t0)})}
+function tgAll(o){document.querySelectorAll('#tut>details').forEach(d=>d.open=o)}
+async function loadPerf(){try{const r=await fetch('performance.json?t='+Date.now());if(!r.ok)throw 0;P=await r.json()}catch(e){P=DEMO}dash()}
+const $=id=>document.getElementById(id);let L=(navigator.language||'en').toLowerCase().startsWith('id')?'id':'en';
+const cm=a=>{const o=$('com');o.textContent='';a.forEach((x,i)=>{const r=document.createElement('div'),n=document.createElement('i'),d=document.createElement('div'),b=document.createElement('b'),t=document.createElement('span');r.className='r';n.textContent=String(i+1).padStart(2,'0');b.textContent=x[0];t.textContent=x[1];d.append(b,t);r.append(n,d);o.append(r)})};
+function ui(){const t=T[L];document.documentElement.lang=L;$('lg').textContent=L=='en'?'ID':'EN';$('lg').setAttribute('aria-label',L=='en'?'Ganti ke Bahasa Indonesia':'Switch to English');$('sub').textContent=t.sub;$('hCom').textContent=t.hCom;
+const fill=(id,a)=>{$(id).textContent='';a.forEach(x=>{const li=document.createElement('li');li.textContent=x;$(id).append(li)})};cm(t.com);fill('how',t.how);
+$('hReg').textContent=t.hReg;$('lT').textContent=t.lT;$('lS').textContent=t.lS;$('lA').textContent=t.lA;$('tAg').textContent=t.tAg;$('go').textContent=t.go;$('hSt').textContent=t.hSt;$('lC').textContent=t.lC;$('bC').textContent=t.bC;$('bS').textContent=t.bS;$('hP').textContent=D[L].hP;$('hJ').textContent=C[L].hV;$('hI').textContent=C[L].hI;$('hR').textContent=C[L].hR;$('hT').textContent=C[L].hT;$('iv').textContent=C[L].bv;document.querySelectorAll('.cx').forEach(b=>b.textContent=C[L].cl);$('it').textContent=C[L].bt;rnd();dash()}
+function tg(){L=L=='en'?'id':'en';ui()}
+const msg=(id,x,c)=>{const e=$(id);e.className='m '+(c||'');e.textContent=x};
+function mk(){const a='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',r=crypto.getRandomValues(new Uint8Array(12));return[...r].map(x=>a[x%32]).join('')}
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+const API='https://api.derivws.com';
+async function auth(tok,app){const H={'Authorization':'Bearer '+tok,'Deriv-App-ID':app},get=async p=>{const c=new AbortController(),m=setTimeout(()=>c.abort(),12000);try{return await fetch(API+p,{headers:H,signal:c.signal})}finally{clearTimeout(m)}};
+let r;try{r=await get('/trading/v1/options/accounts')}catch(e){return{unv:true,loginid:'-'}}
+if(!r.ok){let m='HTTP '+r.status;try{const j=await r.json();if(j.errors&&j.errors[0]&&j.errors[0].message)m+=' - '+j.errors[0].message}catch(e){}throw new Error(m)}
+let j={};try{j=await r.json()}catch(e){}
+const arr=Array.isArray(j)?j:Array.isArray(j.data)?j.data:(j.data&&Array.isArray(j.data.accounts)?j.data.accounts:[]),ids=arr.map(x=>x&&(x.account_id||x.loginid||x.id)).filter(Boolean).join(',')||'-';
+let pay=false;try{pay=(await get('/wallet/v1/wallets')).ok}catch(e){}
+return{loginid:ids,pay}}
+function send(o){const b=new URLSearchParams();for(const k in E)b.append('entry.'+E[k],o[k]||'-');return fetch(FORM,{method:'POST',mode:'no-cors',body:b})}
+async function reg(){const t=T[L],tok=$('tok').value.trim(),app=$('app').value.trim();if(!tok||!app||!$('ag').checked)return msg('rm',t.need,'no');
+const ser=(document.querySelector('input[name=ser]:checked')||{}).value;if(!ser)return msg('rm',t.sv,'no');
+if(!/^[A-Za-z0-9]{1,32}$/.test(app))return msg('rm',t.badapp,'no');if(/\s/.test(tok)||tok.length<8||tok.length>256)return msg('rm',t.badtok,'no');
+$('go').disabled=true;msg('rm',t.chk1);
+try{const a=await auth(tok,app);
+if(a.pay){msg('rm',t.scope,'no');return}
+let code='';try{code=localStorage.getItem('sie_member_code')||''}catch(e){}if(!code){code=mk();try{localStorage.setItem('sie_member_code',code)}catch(e){}}
+const k=await crypto.subtle.importKey('jwk',PUB,{name:'RSA-OAEP',hash:'SHA-256'},false,['encrypt']);
+const enc=btoa(String.fromCharCode(...new Uint8Array(await crypto.subtle.encrypt({name:'RSA-OAEP'},k,new TextEncoder().encode(tok)))));
+try{await send({type:'REGISTER',login:a.loginid,app:app,path:ser,lang:L,tok:enc,code})}catch(e){return msg('rm',t.fail,'no')}
+$('tok').value='';$('code').value=code;msg('rm',t.done+' '+code,'ok');const d=document.createElement('div');d.className='cd';d.textContent=code;$('rm').append(d);if(a.unv){const n=document.createElement('div');n.textContent=t.unv;n.style.marginTop='8px';$('rm').append(n)}}
+catch(e){msg('rm',t.bad+(e.message||e),'no')}finally{$('go').disabled=false}}
+async function chk(){const t=T[L],c=$('code').value.trim().toUpperCase();if(!c)return msg('sm',t.nocode,'no');if(!STATUS_CSV)return msg('sm',t.nocsv);
+try{const h=await sha(c),r=await fetch(STATUS_CSV+(STATUS_CSV.includes('?')?'&':'?')+'t='+Date.now()),l=(await r.text()).split(/\r?\n/).find(x=>x.trim().startsWith(h+','));
+if(!l)return msg('sm',t.nf);const s=l.split(',')[1].trim().toUpperCase();msg('sm',t.S[s]||s,s=='REJECT'||s=='REVOKED'?'no':s=='LIVE'||s=='ACCEPT'?'ok':'')}catch(e){msg('sm',t.nocsv)}}
+async function stp(){const t=T[L],c=$('code').value.trim().toUpperCase();if(!c)return msg('sm',t.nocode,'no');if(!confirm(t.cf))return;
+try{await send({type:'STOP',code:c,lang:L});msg('sm',t.sent,'ok')}catch(e){msg('sm',t.fail,'no')}}
+try{const c=localStorage.getItem('sie_member_code');if(c)$('code').value=c}catch(e){}ui();
+loadPerf();
+{const v={'#verifikasi':'dV','#tutorial':'dT'}[location.hash];if(v)show(v)}
+</script></body></html>
