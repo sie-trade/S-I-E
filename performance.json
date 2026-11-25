@@ -1,0 +1,10 @@
+{
+  "unit": "%",
+  "start": "2026-11-26",
+  "updated": "2026-11-26",
+  "series": [
+    {"name": "Starter", "active": false, "members": 0, "trades": 0, "wins": 0, "curve": []},
+    {"name": "Advanced", "active": false, "members": 0, "trades": 0, "wins": 0, "curve": []},
+    {"name": "Expert", "active": false, "members": 0, "trades": 0, "wins": 0, "curve": []}
+  ]
+}
