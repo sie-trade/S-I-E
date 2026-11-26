@@ -3,6 +3,15 @@
 <meta name="description" content="Bot trading gratis untuk member S I E Partner di Deriv · Free trading bot for S I E Partner members on Deriv. Scope trade saja, dana tetap milik Anda.">
 <meta property="og:type" content="website"><meta property="og:title" content="S I E · Member"><meta property="og:description" content="Bot trading gratis untuk member S I E Partner di Deriv · Free trading bot for S I E Partner members on Deriv.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://sie-trade.github.io/S-I-E/">
+<meta property="og:url" content="https://sie-trade.github.io/S-I-E/">
+<meta property="og:site_name" content="S I E">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://sie-trade.github.io/S-I-E/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="S I E · Bot trading gratis untuk member S I E Partner">
+<meta name="twitter:card" content="summary_large_image">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'self' https://api.derivws.com https://docs.google.com https://*.googleusercontent.com; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239b1c25'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E">
 <style>
@@ -107,6 +116,16 @@ details[open]>.ab{animation:op .18s ease-out}
 dl{margin:0}
 dl div{display:grid;grid-template-columns:7rem 1fr;gap:.75rem;padding:.55rem 0;border-top:1px solid var(--bd);font-size:.9375rem;line-height:1.45}
 dt{color:var(--mut)}dd{margin:0;font-weight:600}
+/* kalkulator modal + kontak */
+.calc{margin-top:.75rem}
+.calc h3{margin-bottom:0}
+#cr{margin-top:.5rem;font-size:.9375rem}
+#cr div{padding:.55rem 0;border-top:1px solid var(--bd)}
+#cr b{display:block}
+#cr span{color:var(--mut);font-size:.875rem;line-height:1.5}
+.kt{margin:1.5rem 0 0;text-align:center}
+#ktw{display:flex;gap:.5rem;justify-content:center;margin-bottom:.6rem}
+#ktw .btn{min-width:8.5rem}
 /* panel verifikasi + tutorial */
 .pn{max-width:56rem;margin:0 auto}
 .ph{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:1.25rem 0 .75rem;padding-bottom:.6rem;border-bottom:1px solid var(--bd)}
@@ -174,7 +193,7 @@ main{padding-inline:1.75rem}
 <h2 class="sec" id="hP"></h2>
 <div id="dash"></div>
 <div class="cols">
-<section><h2 class="sec" id="hR"></h2><div id="ringkas"></div></section>
+<section><h2 class="sec" id="hR"></h2><div id="ringkas"></div><div class="c calc" id="calc"></div></section>
 <section><h2 class="sec" id="hI"></h2><div class="grp" id="info"></div></section>
 </div>
 </div>
@@ -196,6 +215,7 @@ main{padding-inline:1.75rem}
 </div>
 </section>
 <noscript><div class="c"><div class="m">Aktifkan JavaScript untuk memakai halaman ini. · Please enable JavaScript to use this page.</div></div></noscript>
+<div class="kt"><div id="ktw" hidden><a class="btn g" id="kt1" href="#" target="_blank" rel="noopener noreferrer" hidden>Telegram</a><a class="btn g" id="kt2" href="#" target="_blank" rel="noopener noreferrer" hidden>WhatsApp</a></div><p class="mt" id="kn"></p></div>
 <footer>Powered by S I E<span>Created by Nana Lafea</span></footer>
 </main>
 <script>
@@ -204,6 +224,8 @@ if(/Android ?TV|Google ?TV|Smart-?TV|BRAVIA|\bAFT[A-Z]+\b|CrKey|Tizen|Web0S|HbbT
 const FORM='https://docs.google.com/forms/d/e/1FAIpQLSeSzC-nO1CVfUKE1weCbmkPuHkAHZg1oX5rR-aoUHfb3mbOuw/formResponse';
 const E={app:'2027997246',path:'613415035',lang:'1273090637',tok:'938568743',code:'1037372099',login:'1077271714',type:'731196867'};
 const STATUS_CSV='';
+const CONTACT_TG='';   // mis. 'https://t.me/username'  (kosong = tombol tersembunyi)
+const CONTACT_WA='';   // mis. 'https://wa.me/628xxxxxxxxxx'
 const PUB={"alg":"RSA-OAEP-256","e":"AQAB","ext":true,"key_ops":["encrypt"],"kty":"RSA","n":"uEK_v8MHMtKC6xoY5YGBQyqNDAvqiAVPqb2nqVoxUh2Sjp97LIsLmEJqNhQYRDq4sjwuxk-dHCjCO8DosM-S4PN7pPMS9QrGYA_3uTowWesm4WIptgBai3cBsKoqcJ5NyPBP-my-V2yxvQPWC9okf9nTUAquJ3-Kece745TnXM4wyTJA_kDOx-RHbF0EwczDJ-tb_ORIwyoT4nVjKnQr8tAvEzoEImF7i_knTRi0q-Ojh1Yafl9o61B1cuV4py1EdTW1qh9Jx3oP5ooJmipCsBBv6i_kQvgFv1Qb-fHUl8eYsaCvXDMbHDkHHSYC9LXdlXILqvsXQA41Rd4uPSjIUQ"};
 const T={en:{lS:"Choose a series that fits your budget",sv:"Choose a series first.",sub:"Free trading bot\nExclusive to S I E Partner members",hCom:"Our commitments",
 com:[["Trade scope only","Never add the payment scope. Tokens with payment are rejected."],["Your funds stay yours","S I E cannot withdraw or move your money."],["Token used for the bot only","Used solely for S I E bot trades on your account."],["You stay in control","Revoke the token in Deriv any time and the bot stops."],["Free of charge","For members under S I E Partner."],["Risk","Trading can lose money. No profit is guaranteed."]],
@@ -328,6 +350,14 @@ id:{k:['Target (TP)','Modal awal','Batas modal','Compound','Batas rugi','Durasi 
 s:[['Starter','$7 – Unlimited',['+100% dari modal awal','Minimal $7','Unlimited','Ya, opsional (mode MAX). TP nonaktif saat dipakai.','Bisa sampai 100% modal','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']],
 ['Advanced','$500 – $4.000',['+5% dari modal awal, lalu berhenti','Minimal $500','Maksimal $4.000','Tidak','Maks. 50% modal (berhenti setelah 10 siklus minus)','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']],
 ['Expert','$5.000 – $10.000',['+5% dari modal awal, lalu berhenti','Minimal $5.000','Maksimal $10.000','Tidak','Maks. 25% modal (berhenti setelah 5 siklus minus)','Beberapa menit hingga ±4 jam 45 menit, tergantung pasar']]]}};
+const K={en:{h:'Check your budget',l:'Your capital (USD)',p:'e.g. 1000',min:'The minimum capital is $7 (Starter).',u:'Capital used',tp:'target',ls:'loss limit',nt:'Estimates based on the series rules. Not a profit guarantee.'},
+id:{h:'Cek modalmu',l:'Modalmu (USD)',p:'contoh 1000',min:'Modal minimal $7 (Starter).',u:'Modal dipakai',tp:'target',ls:'batas rugi',nt:'Perkiraan dari aturan seri. Bukan jaminan profit.'}};
+const CS=[['Starter',7,0,1,1],['Advanced',500,4000,.05,.5],['Expert',5000,10000,.05,.25]];
+function cc(){const k=K[L],v=$('cap').value.replace(/[^\d.,]/g,''),n=parseFloat(L=='id'?v.replace(/\./g,'').replace(',','.'):v.replace(/,/g,'')),o=$('cr');
+if(!v||!(n>0)){o.innerHTML='';return}
+const f=x=>'$'+x.toLocaleString(L=='id'?'id-ID':'en-US',{maximumFractionDigits:2});
+const r=CS.filter(x=>n>=x[1]).map(x=>{const b=x[2]?Math.min(n,x[2]):n;return'<div><b>'+x[0]+'</b><span>'+k.u+' '+f(b)+' · '+k.tp+' +'+f(b*x[3])+' · '+k.ls+' '+f(b*x[4])+'</span></div>'}).join('');
+o.innerHTML=r?r+'<div class="mt">'+k.nt+'</div>':'<div>'+k.min+'</div>'}
 function rnd(){const c=C[L],q=[...document.querySelectorAll('#ringkas details,#info details,#tut details')].map(d=>d.open);
 const S='<ul class="sl">'+Object.entries(T[L].S).map(([k,v])=>'<li><span class="stt s-'+k+'">'+k+'</span><span>'+esc(v)+'</span></li>').join('')+'</ul>',
 Q=c.faq.map(x=>'<details class="q"><summary><span class="t">'+x[0]+'</span></summary><div class="ab"><p>'+x[1]+'</p></div></details>').join(''),
@@ -335,6 +365,7 @@ H=T[L].how.map(x=>'<li>'+esc(x)+'</li>').join('');
 const R=SR[L],sel=(document.querySelector('input[name=ser]:checked')||{}).value,TP=['+100%','+5%','+5%'],LS=['100%','50%','25%'];
 $('pick').innerHTML=R.s.map((x,i)=>{const v=x[0].toUpperCase();return'<label><input type="radio" name="ser" value="'+v+'"'+(v==sel?' checked':'')+'><span><b>'+x[0]+'</b><small>'+R.k[1]+': '+x[1]+'<br>TP '+TP[i]+', '+R.k[4].toLowerCase()+' '+LS[i]+'</small></span></label>'}).join('');
 $('ringkas').innerHTML='<div class="grp">'+R.s.map(x=>acc(x[0]+' <small>'+x[1]+'</small>','<dl>'+x[2].map((v,i)=>'<div><dt>'+R.k[i]+'</dt><dd>'+v+'</dd></div>').join('')+'</dl>')).join('')+'</div><div class="note">'+R.note+'</div>';
+{const o=$('cap'),pv=o?o.value:'';$('calc').innerHTML='<h3>'+K[L].h+'</h3><label for="cap">'+K[L].l+'</label><input type="text" id="cap" inputmode="decimal" autocomplete="off" placeholder="'+K[L].p+'" oninput="cc()"><div id="cr" aria-live="polite"></div>';$('cap').value=pv;cc()}
 $('info').innerHTML=c.info.map(x=>acc(x[0],x[1].replace('{S}',S).replace('{Q}',Q),x[2])).join('');
 $('tut').innerHTML='<div class="tb"><span class="mt">'+c.intro+'</span><span><button class="btn g sm" type="button" onclick="tgAll(true)">'+c.ex+'</button><button class="btn g sm" type="button" onclick="tgAll(false)">'+c.co+'</button></span></div>'
 +c.steps.map((x,i)=>acc(x[0],x[1].replace('{HOW}',H),x[2],i+1)).join('')+'<div class="src">'+c.src+'</div>';
@@ -352,7 +383,7 @@ function tgAll(o){document.querySelectorAll('#tut>details').forEach(d=>d.open=o)
 async function loadPerf(){try{const r=await fetch('performance.json?t='+Date.now());if(!r.ok)throw 0;P=await r.json()}catch(e){P=DEMO}dash()}
 const $=id=>document.getElementById(id);let L=(navigator.language||'en').toLowerCase().startsWith('id')?'id':'en';
 const cm=a=>{const o=$('com');o.textContent='';a.forEach((x,i)=>{const r=document.createElement('div'),n=document.createElement('i'),d=document.createElement('div'),b=document.createElement('b'),t=document.createElement('span');r.className='r';n.textContent=String(i+1).padStart(2,'0');b.textContent=x[0];t.textContent=x[1];d.append(b,t);r.append(n,d);o.append(r)})};
-function ui(){const t=T[L];document.documentElement.lang=L;$('lg').textContent=L=='en'?'ID':'EN';$('lg').setAttribute('aria-label',L=='en'?'Ganti ke Bahasa Indonesia':'Switch to English');$('sub').textContent=t.sub;$('hCom').textContent=t.hCom;
+function ui(){const t=T[L];document.documentElement.lang=L;$('lg').textContent=L=='en'?'ID':'EN';$('lg').setAttribute('aria-label',L=='en'?'Ganti ke Bahasa Indonesia':'Switch to English');{const ok=u=>/^https:\/\/(t|wa)\.me\//.test(u);[['kt1',CONTACT_TG],['kt2',CONTACT_WA]].forEach(([i,u])=>{$(i).hidden=!ok(u);if(ok(u))$(i).href=u});$('ktw').hidden=!(ok(CONTACT_TG)||ok(CONTACT_WA));$('kn').textContent=L=='en'?'S I E admins never ask for your token or password in chat.':'Admin S I E tidak pernah meminta token atau password lewat chat.'}$('sub').textContent=t.sub;$('hCom').textContent=t.hCom;
 const fill=(id,a)=>{$(id).textContent='';a.forEach(x=>{const li=document.createElement('li');li.textContent=x;$(id).append(li)})};cm(t.com);fill('how',t.how);
 $('hReg').textContent=t.hReg;$('lT').textContent=t.lT;$('lS').textContent=t.lS;$('lA').textContent=t.lA;$('tAg').textContent=t.tAg;$('go').textContent=t.go;$('hSt').textContent=t.hSt;$('lC').textContent=t.lC;$('bC').textContent=t.bC;$('bS').textContent=t.bS;$('hP').textContent=D[L].hP;$('hJ').textContent=C[L].hV;$('hI').textContent=C[L].hI;$('hR').textContent=C[L].hR;$('hT').textContent=C[L].hT;$('iv').textContent=C[L].bv;document.querySelectorAll('.cx').forEach(b=>b.textContent=C[L].cl);$('it').textContent=C[L].bt;rnd();dash()}
 function tg(){L=L=='en'?'id':'en';ui()}
